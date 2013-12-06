@@ -146,14 +146,16 @@
     transition-delay: @delay;
 }
 
+
 //
-// Animation
+// animation
 //
-.animation(...) {
-  -webkit-animation: @arguments;
-     -moz-animation: @arguments;
-       -o-animation: @arguments;
-          animation: @arguments;
+.animation(@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    -ms-animation: @animation;
+    -o-animation: @animation;
+    animation: @animation;
 }
 
 
@@ -228,17 +230,6 @@
 
     // Enables openGL
     .transform(translate3d(0, 0, 0));
-}
-
-//
-// animation
-//
-.animation(@animation) {
-    -webkit-animation: @animation;
-    -moz-animation: @animation;
-    -ms-animation: @animation;
-    -o-animation: @animation;
-    animation: @animation;
 }
 
 //
