@@ -115,7 +115,7 @@
     @timing-function: @transition-timing-function,
     @delay: @transition-delay) {
         -webkit-transition: @arguments;
-        -moz-transition: @arguments;
+        -moz-transition: @property, @duration, @timing-function;
         -o-transition: @arguments;
         transition: @arguments;
 }
